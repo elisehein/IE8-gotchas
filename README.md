@@ -51,3 +51,17 @@ This is a collection of gotchas and pitfalls which I have come across while deve
   other appear on the actual browser that don't show up in IE8 mode, such as the `\:selector`
   rule for `ng-repeat`. If not for anything else, opening your app on IE8 will at least
   make you aware of just *how* slow the browser actually is.
+  
+### Styling workarounds
+
+- Gradients on IE8 are doable with filters, however when any of the colours used
+  in the gradient is transparent, mouse clicks will not be registered on the gradient.
+  See [No transparency click bug](http://haslayout.net/css/No-Transparency-Click-Bug).
+  I guess the browser thinks since the element is half-transparent, clicks should go "through" it.
+
+  The solution is to add a fake background image to make the browser think the element
+  has a solid background which captures clicks, for example `background: url(#)`.
+  
+  Have a look at the Sass mixin I wrote which encapsulates all of the gradient
+  workarounds: [Sass mixin for IE transparency](https://gist.github.com/elisehein/b65a653b7ad277a6bde6)
+
