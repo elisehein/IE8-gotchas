@@ -60,6 +60,8 @@ This is a collection of gotchas and pitfalls which I have come across while deve
 
 - Gradients on IE8 are doable with filters, however when any of the colours used
   in the gradient is transparent, mouse clicks will not be registered on the gradient.
+  I encountered this one when trying to get a modal window to close when the user clicks
+  outside of the modal.
   See [No transparency click bug](http://haslayout.net/css/No-Transparency-Click-Bug).
   I guess the browser thinks since the element is half-transparent, clicks should go "through" it.
 
