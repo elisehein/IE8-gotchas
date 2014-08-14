@@ -70,4 +70,7 @@ This is a collection of gotchas and pitfalls which I have come across while deve
   
   Have a look at the Sass mixin I wrote which encapsulates all of the gradient
   workarounds: [Sass mixin for IE transparency](https://gist.github.com/elisehein/b65a653b7ad277a6bde6)
+  
+- `:nth-child` is not supported on IE8, however `:first-child` is, so when really needed,
+  `:nth-child` can be reliably simulated [using the adjacent sibling selector](http://stackoverflow.com/a/8492882/2026098).
 
