@@ -1,9 +1,11 @@
-Angular-and-IE8-guide
+Developing for IE8
 =====================
 
 This is a collection of gotchas and pitfalls which I have come across while developing web apps for IE8, for both my own reference and for others.
 
-- First of all, make sure to go through [Angular's IE guide](https://docs.angularjs.org/guide/ie).
+### Angular.js
+
+- When using Angular, make sure to first go through [Angular's IE guide](https://docs.angularjs.org/guide/ie).
 
 - jQuery might need to be included conditionally on IE8 (it's usually not needed with Angular, as jQLite is sufficient), to make Angular work. See [StackOverflow thread](http://stackoverflow.com/questions/20556102/angular-and-ie8-html5-elements-not-styled-inside-ng-view).
   Also keep in mind that jQuery [dropped support for IE8 since 2.x](http://stackoverflow.com/questions/18327225/object-doesnt-support-addeventlistener-ie8-in-jquery),
@@ -16,6 +18,8 @@ This is a collection of gotchas and pitfalls which I have come across while deve
   elements are set to `display: block`, because on IE8 inside `ng-repeat`, unknown
   tags will be prefixed with a colon. See [Problem 3 in this blog post](http://blog-it.hypoport.de/2013/08/24/how-to-make-your-angularjs-app-work-in-ie-8/)
   for details.
+
+### General
 
 - CORS is not supported on IE8, so any setup where a static site consumes a separate
   API will need some sort of proxying or other trick to make it look like requests
