@@ -52,7 +52,7 @@ This is a collection of gotchas and pitfalls which I have come across while deve
   minifies styles.
 
   Also, you *should* test the site on actual IE8, not just IE8 mode, as several
-  other appear on the actual browser that don't show up in IE8 mode, such as the `\:selector`
+  bugs appear on the actual browser that don't show up in IE8 mode, such as the `\:selector`
   rule for `ng-repeat`. If not for anything else, opening your app on IE8 will at least
   make you aware of just *how* slow the browser actually is.
   
