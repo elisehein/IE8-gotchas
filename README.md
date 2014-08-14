@@ -38,8 +38,8 @@ This is a collection of gotchas and pitfalls which I have come across while deve
 
   ```js
   angular.module("some.widget", [
-  "dependency.one",
-  "dependency.two",
+    "dependency.one",
+    "dependency.two",
   ])
   ```
 
