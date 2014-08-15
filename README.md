@@ -1,7 +1,7 @@
 Developing for IE8
 =====================
 
-This is a collection of gotchas and pitfalls which I have come across while developing web apps for IE8, for both my own reference and for others.
+This is a non-final collection of gotchas and pitfalls which I have come across while developing web apps for IE8, for both my own reference and for others.
 
 ### Angular.js
 
